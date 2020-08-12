@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Routes from './routes';
 import { Link, useHistory } from "react-router-dom";
+import Main from "./components/Main";
 
 function App() {
 
@@ -31,19 +31,7 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="container">
-        <nav>
-          <ul>
-            <li><Link to="/"> NewReactRouter </Link></li>
-          </ul>
-          <ul>
-            {_contact}
-          </ul>
-        </nav>
-        <Routes />
-      </div>
-    </div>
+    <Main />
   );
 }
 
