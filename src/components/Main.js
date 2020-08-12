@@ -31,14 +31,6 @@ const Main = () => {
 
     return (
         <React.Fragment>
-            <header>
-
-
-
-
-           </header>
-
-
 
             <main>
 
