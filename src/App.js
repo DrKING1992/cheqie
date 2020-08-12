@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Routes from './routes';
+import Main from './components/Main'
 import { Link, useHistory } from "react-router-dom";
 
 function App() {
@@ -35,13 +36,12 @@ function App() {
       <div className="container">
         <nav>
           <ul>
-            <li><Link to="/"> NewReactRouter </Link></li>
+            <li><Main /></li>
           </ul>
           <ul>
             {_contact}
           </ul>
         </nav>
-        <Routes />
       </div>
     </div>
   );
