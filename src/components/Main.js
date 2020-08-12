@@ -151,22 +151,6 @@ const Main = () => {
                     </div>
                 </div>
                 </section>
-
-
-                <section className="request">
-                     <h2>FOOTER</h2>
-                        <div className="request-container">
-                            <form className="request-form" onSubmit={join}>
-                                <input type ="email" placeholder="Email hier invullen" onChange={(e) => setJoined(e.target.value)} />    
-                                <input type ="submit" value="Verzenden" />    
-                            </form>            
-                                
-                        </div>
-                </section>
-
-
-
-
             </main>
 
         </React.Fragment>
