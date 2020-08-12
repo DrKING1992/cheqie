@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, {useState} from "react";
+import { Link, useHistory} from "react-router-dom";
 import CheqieLogo from "../images/cheqielogo.png";
 import CtaBackground from "../images/img_snow_wide.jpg";
 import eva from "../images/eva.png";
@@ -14,6 +14,20 @@ import book from "../images/book.png";
 
 
 const Main = () => {
+
+    const [joined, setJoined] = useState("");
+    const history = useHistory();
+
+    const join = (e) => {
+        e.preventDefault();
+        if(joined !== ""){
+            let today = new Date();
+            let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            history.push(`/thanks/${joined}`, date );
+        }
+    }
+
+
 
     return (
         <React.Fragment>
@@ -144,13 +158,29 @@ const Main = () => {
                         <li>Ik ben zeer tevreden blablabla</li>
                     </div>
                     <div className="column-review">
-                        <img src={tao} alt="tao"/>
+                        <img src={tao} alt="logo"/>
                         <li><b>Tao C*****</b></li>
                         <li>Callcenter Mederwerker</li>
                         <li>Ik ben zeer tevreden blablabla</li>
                     </div>
                 </div>
                 </section>
+
+
+                <section className="request">
+                     <h2>FOOTER</h2>
+                        <div className="request-container">
+                            <form className="request-form" onSubmit={join}>
+                                <input type ="email" placeholder="Email hier invullen" onChange={(e) => setJoined(e.target.value)} />    
+                                <input type ="submit" value="Verzenden" />    
+                            </form>            
+                                
+                        </div>
+                </section>
+
+
+
+
             </main>
 
         </React.Fragment>

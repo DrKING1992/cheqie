@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Main from './components/Main'
+import Routes from './routes';
 import { Link, useHistory } from "react-router-dom";
 
 function App() {
-  
+
   const history = useHistory();
   const [path, setPath] = useState("");
 
@@ -35,11 +35,13 @@ function App() {
       <div className="container">
         <nav>
           <ul>
-            <li><Main /></li>
+            <li><Link to="/"> NewReactRouter </Link></li>
           </ul>
           <ul>
+            {_contact}
           </ul>
         </nav>
+        <Routes />
       </div>
     </div>
   );
