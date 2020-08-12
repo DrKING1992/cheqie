@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Routes from './routes';
 import Main from './components/Main'
 import { Link, useHistory } from "react-router-dom";
 
@@ -39,7 +38,6 @@ function App() {
             <li><Main /></li>
           </ul>
           <ul>
-            {_contact}
           </ul>
         </nav>
       </div>

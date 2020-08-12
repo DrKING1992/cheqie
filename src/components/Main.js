@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { Link, useHistory} from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import CheqieLogo from "../images/cheqielogo.png";
 import CtaBackground from "../images/img_snow_wide.jpg";
 import eva from "../images/eva.png";
@@ -14,20 +14,6 @@ import book from "../images/book.png";
 
 
 const Main = () => {
-
-    const [joined, setJoined] = useState("");
-    const history = useHistory();
-
-    const join = (e) => {
-        e.preventDefault();
-        if(joined !== ""){
-            let today = new Date();
-            let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-            history.push(`/thanks/${joined}`, date );
-        }
-    }
-
-
 
     return (
         <React.Fragment>
