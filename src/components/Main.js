@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import { Link, useHistory} from "react-router-dom";
 import CheqieLogo from "../images/cheqielogo.png";
 import CtaBackground from "../images/img_snow_wide.jpg";
-import banner from "../images/banner.png";
 import eva from "../images/eva.png";
 import kevin from "../images/kevin.png";
 import tao from "../images/tao.png";
@@ -12,7 +11,6 @@ import checklist from "../images/checklist.png";
 import customercare from "../images/customercare.png";
 import search from "../images/search.png";
 import book from "../images/book.png";
-import expandicon from "../images/expandicon.png";
 
 
 const Main = () => {
@@ -50,9 +48,9 @@ const Main = () => {
                
 
             <section className="banner">
-            <div class="row-banner">
+            <div className="row-banner">
                 <div className="column-banner">
-                    <img src={CheqieLogo} />
+                    <img src={CheqieLogo} alt="logo"/>
                     <h1>Vind de huishoudhulp die bij jou past</h1>
                     <p><i className="fa fa-check"></i> Altijd opzegbaar</p>
                     <p><i className="fa fa-check"></i> Een vaste hulp</p>
@@ -68,21 +66,21 @@ const Main = () => {
 
             <section className="howitworks">
                 <h2>Hoe werkt het?</h2>
-            <div class="row-how">
+            <div className="row-how">
                 <div className="column-how">
-                    <img src={search} />
+                    <img src={search} alt="search" />
                     <li>Altijd opzegbaar</li>
                     <li>Een vaste hulp</li>
                     <li>Behulpzame klantenservice</li>
                 </div>
                 <div className="column-how">
-                    <img src={book} />
+                    <img src={book} alt="book"/>
                     <li>Altijd opzegbaar</li>
                     <li>Een vaste hulp</li>
                     <li>Behulpzame klantenservice</li>
                 </div>
                 <div className="column-how">
-                    <img src={send} />
+                    <img src={send} alt="send"/>
                     <li>Altijd opzegbaar</li>
                     <li>Een vaste hulp</li>
                     <li>Behulpzame klantenservice</li>
@@ -93,37 +91,37 @@ const Main = () => {
     
                 <section className="faq">
                     <h2>Veelgestelde vragen</h2>
-                <p class="accordion">Dit een voorbeeldvraag 1</p>
-                <div class="panel">A. The course is charged in Australian dollars.</div>
+                <p className="accordion">Dit een voorbeeldvraag 1</p>
+                <div className="panel">A. The course is charged in Australian dollars.</div>
 
-                <p class="accordion">Dit een voorbeeldvraag 1</p>
-                <div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+                <p className="accordion">Dit een voorbeeldvraag 1</p>
+                <div className="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
 
-                <p class="accordion">Dit een voorbeeldvraag 1</p>
-                <div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+                <p className="accordion">Dit een voorbeeldvraag 1</p>
+                <div className="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
 
-                <p class="accordion">Dit een voorbeeldvraag 1</p>
-                <div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>                   
+                <p className="accordion">Dit een voorbeeldvraag 1</p>
+                <div className="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>                   
                 </section>
 
 
                 <section className="advantages">
                     <h2>Voordelen</h2>
-                <div class="row-advantages">
+                <div className="row-advantages">
                     <div className="column-advantages">
-                        <img src={map} />
+                        <img src={map} alt="map" />
                         <li>Altijd opzegbaar</li>
                         <li>Een vaste hulp</li>
                         <li>Behulpzame klantenservice</li>
                     </div>
                     <div className="column-advantages">
-                        <img src={checklist} />
+                        <img src={checklist} alt="checklist"/>
                         <li>Altijd opzegbaar</li>
                         <li>Een vaste hulp</li>
                         <li>Behulpzame klantenservice</li>
                     </div>
                     <div className="column-advantages">
-                        <img src={customercare} />
+                        <img src={customercare} alt="customercare" />
                         <li>Altijd opzegbaar</li>
                         <li>Een vaste hulp</li>
                         <li>Behulpzame klantenservice</li>
@@ -134,7 +132,7 @@ const Main = () => {
 
 
                 <section className="cta-bottom">
-                    <img src={CtaBackground} />
+                    <img src={CtaBackground} alt="ctabackground"/>
                     <div className="centered">
                         <h2>Start nu je aanvraag!</h2>
                         <input className="postcode-input" type="text" placeholder="Vul je postcode in"></input>
@@ -146,21 +144,21 @@ const Main = () => {
 
                 <section className="reviews">
                     <h2>Enkele tevreden klanten</h2>
-                <div class="row-review">
+                <div className="row-review">
                     <div className="column-review">
-                        <img src={eva} />
+                        <img src={eva} alt="eva"/>
                         <li><b>Eva J*****</b></li>
                         <li>Zaakvoerder</li>
                         <li>Ik ben zeer tevreden blablabla</li>
                     </div>
                     <div className="column-review">
-                        <img src={kevin} />
+                        <img src={kevin} alt="kevin"/>
                         <li><b>Kevin I*****</b></li>
                         <li>Vuilnisman</li>
                         <li>Ik ben zeer tevreden blablabla</li>
                     </div>
                     <div className="column-review">
-                        <img src={tao} />
+                        <img src={tao} alt="tao"/>
                         <li><b>Tao C*****</b></li>
                         <li>Callcenter Mederwerker</li>
                         <li>Ik ben zeer tevreden blablabla</li>
